@@ -3,7 +3,7 @@ import {PropsWithChildren} from "react";
 
 export default async function Template({children}: PropsWithChildren) {
     return (
-        <div className="">
+        <div className="animate-appear">
             {children}
         </div>
     )
