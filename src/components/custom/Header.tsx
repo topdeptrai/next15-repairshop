@@ -1,8 +1,12 @@
 import React from 'react';
-import NavButton from "@/components/custom/NavButton";
-import {FileIcon, HomeIcon, UsersRound} from "lucide-react";
 import Link from "next/link";
+import {LogoutLink} from "@kinde-oss/kinde-auth-nextjs/components";
+
+import NavButton from "@/components/custom/NavButton";
+import {FileIcon, HomeIcon, UsersRound, LogOut} from "lucide-react";
 import {ModeToggle} from "@/components/custom/ModeToggle";
+import {Button} from "@/components/ui/button";
+
 
 const Header = () => {
     return (
@@ -22,6 +26,12 @@ const Header = () => {
                     <NavButton href="/tickets" icon={FileIcon} label="Tickets"/>
                     <NavButton href="/customers" icon={UsersRound} label="Customers"/>
                     <ModeToggle/>
+                    <Button variant="ghost" size="icon" aria-label="LogOut" title="LogOut" className="rounded-full"
+                            asChild>
+                        <LogoutLink>
+                            <LogOut/>
+                        </LogoutLink>
+                    </Button>
                 </div>
             </div>
         </header>
